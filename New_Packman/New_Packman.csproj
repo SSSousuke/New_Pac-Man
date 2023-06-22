@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F74D7C1-799C-4EE6-97CE-37D39ED63041}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>New_Packman</RootNamespace>
+    <AssemblyName>New_Packman</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\iloveimg-compressed.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3L1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3U1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2L1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2U1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1L1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1U1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4L1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4U1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3L2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3R2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3U2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2L2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2R2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2U2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\画像1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\635d91cf-b823-42ba-a6b1-acabc1003e36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f74905ee-3eff-4375-970e-223034912ae8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyWeak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyWeak2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4L2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4R2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4U2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1L2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1R2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1U2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3L3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3R3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3U3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2L3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2R3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2U3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4L3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4R3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4U3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1L3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1R3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1U3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3L4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3R4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3U4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2D31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2L31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2R31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2U31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2L4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2R4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2U4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\画像15-removebg-preview %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-ms-pac-man-pac-man-vs-pac-man-plus-arcade-game-5ae759bdc253b6.990941591525111229796.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-ms-pac-man-pac-man-vs-pac-man-plus-arcade-game-5ae759bdc253b6.990941591525111229796-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1L4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2L5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3L5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4L4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyWeak1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_extrapac.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_eatghost.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_death.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_intermission.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\450614__breviceps__8-bit-collect-sound-timer-countdown %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_chomp %28mp3cut.net%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_chomp.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
